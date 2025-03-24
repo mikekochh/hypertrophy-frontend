@@ -12,6 +12,8 @@ import { BASE_URL } from "./config";
 function Home() {
   const [workoutPlan, setWorkoutPlan] = useState(null);
 
+  console.log("BASE_URL: ", BASE_URL);
+
   useEffect(() => {
     axios
       .get(`${BASE_URL}/workout-plans`)
